@@ -54,6 +54,8 @@ class TuyaEntity(Entity):
         """Return if the device is available."""
         return self.device.online
 
+
+
     @overload
     def find_dpcode(
         self,

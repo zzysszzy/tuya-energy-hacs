@@ -1,0 +1,25 @@
+# Home Assistant Configuration for Local Testing
+# Copy this file to your Home Assistant config directory
+
+# Enable debug logging for the custom component
+logger:
+  default: info
+  logs:
+    custom_components.tuya_energy: debug
+    tuya_sharing: debug
+
+# Example Tuya Energy configuration
+tuya_energy:
+  username: "your_tuya_username"
+  password: "your_tuya_password"
+  country_code: "86"  # Your country code
+  biz_type: "smart_life"  # or "tuya"
+  polling_interval: 30
+
+# Enable development mode for better error messages
+frontend:
+  development: true
+
+# Enable configuration validation
+config:
+  safe_mode: false 

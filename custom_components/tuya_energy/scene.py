@@ -45,7 +45,7 @@ class TuyaSceneEntity(Scene):
         """Return a device description for device registry."""
         return DeviceInfo(
             identifiers={(DOMAIN, f"{self.unique_id}")},
-            manufacturer="tuya",
+            manufacturer="Tuya",
             name=self.scene.name,
             model="Tuya Scene",
             entry_type=DeviceEntryType.SERVICE,

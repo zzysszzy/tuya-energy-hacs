@@ -378,7 +378,7 @@ class TuyaOptionsFlow(OptionsFlow):
         """Check if an entity is a valid energy sensor."""
         return (
             entity.domain == "sensor"
-            and entity.platform == "tuya"
+            and entity.platform == DOMAIN
             and entity.original_device_class in ("energy", "energy_storage")
             and entity.device_id is not None
             and entity.capabilities is not None
@@ -394,7 +394,7 @@ class TuyaOptionsFlow(OptionsFlow):
             (
                 identifier
                 for domain, identifier in ha_device.identifiers
-                if domain == "tuya_energy"
+                if domain == DOMAIN
             ),
             None,
         )
