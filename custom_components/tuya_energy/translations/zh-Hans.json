@@ -1,0 +1,1019 @@
+{
+  "config": {
+    "step": {
+      "reauth_user_code": {
+        "description": "Tuya 集成现在使用改进的登录方法。要重新验证您的智能生活或 Tuya Smart 账户，您需要输入用户代码。\n\n您可以在智能生活应用或 Tuya Smart 应用的**设置** > **账户和安全**屏幕中找到此代码，并输入**用户代码**字段中显示的代码。用户代码区分大小写，请确保按照应用中显示的内容准确输入。",
+        "data": {
+          "user_code": "用户代码"
+        }
+      },
+      "user": {
+        "description": "输入您的智能生活或 Tuya Smart 用户代码。\n\n您可以在智能生活应用或 Tuya Smart 应用的**设置** > **账户和安全**屏幕中找到此代码，并输入**用户代码**字段中显示的代码。用户代码区分大小写，请确保按照应用中显示的内容准确输入。",
+        "data": {
+          "user_code": "用户代码"
+        }
+      },
+      "scan": {
+        "description": "使用智能生活应用或 Tuya Smart 应用扫描以下二维码以完成登录。\n\n在应用中完成此步骤后，继续下一步。"
+      }
+    },
+    "error": {
+      "invalid_auth": "身份验证无效",
+      "login_error": "登录错误 ({code}): {msg}"
+    },
+    "abort": {
+      "reauth_successful": "重新验证成功"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "methane": {
+        "name": "甲烷"
+      },
+      "voc": {
+        "name": "挥发性有机化合物"
+      },
+      "pm25": {
+        "name": "PM2.5"
+      },
+      "carbon_monoxide": {
+        "name": "一氧化碳"
+      },
+      "carbon_dioxide": {
+        "name": "二氧化碳"
+      },
+      "formaldehyde": {
+        "name": "甲醛"
+      },
+      "pressure": {
+        "name": "压力"
+      },
+      "feeding": {
+        "name": "喂食"
+      },
+      "drop": {
+        "name": "跌落"
+      },
+      "tilt": {
+        "name": "倾斜"
+      }
+    },
+    "button": {
+      "reset_duster_cloth": {
+        "name": "重置抹布"
+      },
+      "reset_edge_brush": {
+        "name": "重置边刷"
+      },
+      "reset_filter": {
+        "name": "重置过滤器"
+      },
+      "reset_map": {
+        "name": "重置地图"
+      },
+      "reset_roll_brush": {
+        "name": "重置滚刷"
+      },
+      "snooze": {
+        "name": "贪睡"
+      }
+    },
+    "sensor": {
+      "battery": {
+        "name": "电池"
+      },
+      "voc": {
+        "name": "挥发性有机化合物"
+      },
+      "carbon_monoxide": {
+        "name": "一氧化碳"
+      },
+      "carbon_dioxide": {
+        "name": "二氧化碳"
+      },
+      "illuminance": {
+        "name": "照度"
+      },
+      "temperature": {
+        "name": "温度"
+      },
+      "temperature_external": {
+        "name": "探头温度"
+      },
+      "humidity": {
+        "name": "湿度"
+      },
+      "pm25": {
+        "name": "PM2.5"
+      },
+      "pm1": {
+        "name": "PM1"
+      },
+      "pm10": {
+        "name": "PM10"
+      },
+      "current": {
+        "name": "电流"
+      },
+      "power": {
+        "name": "功率"
+      },
+      "voltage": {
+        "name": "电压"
+      },
+      "battery_state": {
+        "name": "电池状态"
+      },
+      "battery_soc": {
+        "name": "电池电量"
+      },
+      "battery_capacity": {
+        "name": "电池容量"
+      },
+      "battery_power": {
+        "name": "电池功率（正值放电，负值充电）"
+      },
+      "total_pv_power": {
+        "name": "光伏总功率"
+      },
+      "pv_power_channel": {
+        "name": "光伏功率通道{channel}"
+      },
+      "inverter_output_power": {
+        "name": "逆变器输出功率"
+      },
+      "cumulative_energy_generated_pv": {
+        "name": "光伏累计发电量"
+      },
+      "cumulative_energy_output_inv": {
+        "name": "逆变累计输出电量"
+      },
+      "cumulative_energy_discharged": {
+        "name": "电池累计放电量"
+      },
+      "cumulative_energy_charged": {
+        "name": "电池累计充电量"
+      },
+      "cuml_e_export_offgrid1": {
+        "name": "离网口1累计输出电量"
+      },
+      "serial_number": {
+        "name": "序列号"
+      },
+      "gas": {
+        "name": "燃气"
+      },
+      "formaldehyde": {
+        "name": "甲醛"
+      },
+      "luminosity": {
+        "name": "亮度"
+      },
+      "smoke_amount": {
+        "name": "烟雾量"
+      },
+      "current_temperature": {
+        "name": "当前温度"
+      },
+      "status": {
+        "name": "状态"
+      },
+      "last_amount": {
+        "name": "上次数量"
+      },
+      "remaining_time": {
+        "name": "剩余时间"
+      },
+      "methane": {
+        "name": "甲烷"
+      },
+      "total_energy": {
+        "name": "总电量"
+      },
+      "total_power": {
+        "name": "总功率"
+      },
+      "total_production": {
+        "name": "总发电量"
+      },
+      "phase_a_current": {
+        "name": "A相电流"
+      },
+      "phase_a_power": {
+        "name": "A相功率"
+      },
+      "phase_a_voltage": {
+        "name": "A相电压"
+      },
+      "phase_b_current": {
+        "name": "B相电流"
+      },
+      "phase_b_power": {
+        "name": "B相功率"
+      },
+      "phase_b_voltage": {
+        "name": "B相电压"
+      },
+      "phase_c_current": {
+        "name": "C相电流"
+      },
+      "phase_c_power": {
+        "name": "C相功率"
+      },
+      "phase_c_voltage": {
+        "name": "C相电压"
+      },
+      "cleaning_area": {
+        "name": "清洁面积"
+      },
+      "cleaning_time": {
+        "name": "清洁时间"
+      },
+      "total_cleaning_area": {
+        "name": "总清洁面积"
+      },
+      "total_cleaning_time": {
+        "name": "总清洁时间"
+      },
+      "total_cleaning_times": {
+        "name": "总清洁次数"
+      },
+      "duster_cloth_life": {
+        "name": "抹布寿命"
+      },
+      "side_brush_life": {
+        "name": "边刷寿命"
+      },
+      "filter_life": {
+        "name": "过滤器寿命"
+      },
+      "rolling_brush_life": {
+        "name": "滚刷寿命"
+      },
+      "last_operation_duration": {
+        "name": "上次操作持续时间"
+      },
+      "water_level": {
+        "name": "水位"
+      },
+      "total_watering_time": {
+        "name": "总浇水时间"
+      },
+      "filter_utilization": {
+        "name": "过滤器利用率"
+      },
+      "total_volatile_organic_compound": {
+        "name": "总挥发性有机化合物"
+      },
+      "concentration_carbon_dioxide": {
+        "name": "二氧化碳浓度"
+      },
+      "total_operating_time": {
+        "name": "总运行时间"
+      },
+      "total_absorption_particles": {
+        "name": "总吸收颗粒物"
+      },
+      "sous_vide_status": {
+        "name": "状态",
+        "state": {
+          "boiling_temp": "沸腾温度",
+          "cooling": "冷却",
+          "heating_temp": "加热温度",
+          "heating": "加热",
+          "reserve_1": "预留1",
+          "reserve_2": "预留2",
+          "reserve_3": "预留3",
+          "standby": "待机",
+          "warm": "保温"
+        }
+      },
+      "air_quality": {
+        "name": "空气质量",
+        "state": {
+          "great": "优秀",
+          "mild": "轻度",
+          "good": "良好",
+          "severe": "严重"
+        }
+      },
+      "air_quality_index": {
+        "name": "空气质量指数",
+        "state": {
+          "level_1": "等级1",
+          "level_2": "等级2",
+          "level_3": "等级3",
+          "level_4": "等级4",
+          "level_5": "等级5",
+          "level_6": "等级6"
+        }
+      },
+      "uv_runtime": {
+        "name": "紫外线运行时间"
+      },
+      "pump_time": {
+        "name": "水泵持续时间"
+      },
+      "filter_duration": {
+        "name": "过滤持续时间"
+      },
+      "water_time": {
+        "name": "用水持续时间"
+      },
+      "supply_frequency": {
+        "name": "供电频率"
+      }
+    },
+    "cover": {
+      "blind": {
+        "name": "百叶窗"
+      },
+      "curtain": {
+        "name": "窗帘"
+      },
+      "curtain_2": {
+        "name": "窗帘2"
+      },
+      "curtain_3": {
+        "name": "窗帘3"
+      },
+      "door": {
+        "name": "门"
+      },
+      "door_2": {
+        "name": "门2"
+      },
+      "door_3": {
+        "name": "门3"
+      }
+    },
+    "number": {
+      "indexed_irrigation_duration": {
+        "name": "灌溉时长{index}"
+      },
+      "irrigation_duration_1": {
+        "name": "灌溉时长1"
+      },
+      "irrigation_duration_2": {
+        "name": "灌溉时长2"
+      },
+      "irrigation_duration_3": {
+        "name": "灌溉时长3"
+      },
+      "irrigation_duration_4": {
+        "name": "灌溉时长4"
+      },
+      "irrigation_duration_5": {
+        "name": "灌溉时长5"
+      },
+      "irrigation_duration_6": {
+        "name": "灌溉时长6"
+      },
+      "irrigation_duration_7": {
+        "name": "灌溉时长7"
+      },
+      "irrigation_duration_8": {
+        "name": "灌溉时长8"
+      },
+      "alarm_duration": {
+        "name": "报警时长"
+      },
+      "cloud_recipe": {
+        "name": "云端配方"
+      },
+      "cook_temperature": {
+        "name": "烹饪温度"
+      },
+      "cook_time": {
+        "name": "烹饪时间"
+      },
+      "down_delay": {
+        "name": "向下延迟"
+      },
+      "far_detection": {
+        "name": "远距离检测"
+      },
+      "feed": {
+        "name": "喂食"
+      },
+      "heat_preservation_time": {
+        "name": "保温时间"
+      },
+      "maximum_brightness": {
+        "name": "最大亮度"
+      },
+      "maximum_brightness_2": {
+        "name": "最大亮度2"
+      },
+      "maximum_brightness_3": {
+        "name": "最大亮度3"
+      },
+      "minimum_brightness": {
+        "name": "最小亮度"
+      },
+      "minimum_brightness_2": {
+        "name": "最小亮度2"
+      },
+      "minimum_brightness_3": {
+        "name": "最小亮度3"
+      },
+      "move_down": {
+        "name": "向下移动"
+      },
+      "move_up": {
+        "name": "向上移动"
+      },
+      "near_detection": {
+        "name": "近距离检测"
+      },
+      "powder": {
+        "name": "粉末"
+      },
+      "sensitivity": {
+        "name": "灵敏度"
+      },
+      "target_dis_closest": {
+        "name": "最近目标距离"
+      },
+      "temperature": {
+        "name": "温度"
+      },
+      "temperature_after_boiling": {
+        "name": "沸腾后温度"
+      },
+      "time": {
+        "name": "时间"
+      },
+      "voice_times": {
+        "name": "语音次数"
+      },
+      "volume": {
+        "name": "音量"
+      },
+      "water_level": {
+        "name": "水位"
+      },
+      "backup_reserve": {
+        "name": "备用储备"
+      },
+      "output_power_limit": {
+        "name": "输出功率限制"
+      }
+    },
+    "light": {
+      "backlight": {
+        "name": "背光"
+      },
+      "light": {
+        "name": "灯"
+      },
+      "light_2": {
+        "name": "灯2"
+      },
+      "light_3": {
+        "name": "灯3"
+      },
+      "night_light": {
+        "name": "夜灯"
+      }
+    },
+    "switch": {
+      "indexed_switch": {
+        "name": "开关{index}"
+      },
+      "power": {
+        "name": "电源"
+      },
+      "child_lock": {
+        "name": "儿童锁"
+      },
+      "switch": {
+        "name": "开关"
+      },
+      "switch_1": {
+        "name": "开关1"
+      },
+      "switch_2": {
+        "name": "开关2"
+      },
+      "switch_3": {
+        "name": "开关3"
+      },
+      "switch_4": {
+        "name": "开关4"
+      },
+      "socket": {
+        "name": "插座"
+      },
+      "socket_1": {
+        "name": "插座1"
+      },
+      "socket_2": {
+        "name": "插座2"
+      },
+      "socket_3": {
+        "name": "插座3"
+      },
+      "usb_1": {
+        "name": "USB1"
+      },
+      "usb_2": {
+        "name": "USB2"
+      },
+      "usb_3": {
+        "name": "USB3"
+      },
+      "usb_4": {
+        "name": "USB4"
+      },
+      "feedin_power_limit_enable": {
+        "name": "反向供电功率限制启用"
+      },
+      "alarm_1": {
+        "name": "报警1"
+      },
+      "alarm_2": {
+        "name": "报警2"
+      },
+      "alarm_3": {
+        "name": "报警3"
+      },
+      "alarm_4": {
+        "name": "报警4"
+      },
+      "anion": {
+        "name": "负离子"
+      },
+      "battery_lock": {
+        "name": "电池锁"
+      },
+      "cry_detection": {
+        "name": "哭声检测"
+      },
+      "disinfection": {
+        "name": "消毒"
+      },
+      "do_not_disturb": {
+        "name": "请勿打扰"
+      },
+      "energy_saving": {
+        "name": "节能"
+      },
+      "filter_cartridge_reset": {
+        "name": "滤芯重置"
+      },
+      "filter_reset": {
+        "name": "过滤器重置"
+      },
+      "flip": {
+        "name": "翻转"
+      },
+      "heat_preservation": {
+        "name": "保温"
+      },
+      "humidification": {
+        "name": "加湿"
+      },
+      "ionizer": {
+        "name": "离子发生器"
+      },
+      "motion_alarm": {
+        "name": "运动报警"
+      },
+      "motion_recording": {
+        "name": "运动录制"
+      },
+      "motion_tracking": {
+        "name": "运动跟踪"
+      },
+      "mute": {
+        "name": "静音"
+      },
+      "mute_voice": {
+        "name": "静音语音"
+      },
+      "natural_wind": {
+        "name": "自然风"
+      },
+      "open_window_detection": {
+        "name": "开窗检测"
+      },
+      "oxygen_bar": {
+        "name": "氧吧"
+      },
+      "plug": {
+        "name": "插头"
+      },
+      "privacy_mode": {
+        "name": "隐私模式"
+      },
+      "pump": {
+        "name": "水泵"
+      },
+      "radio": {
+        "name": "收音机"
+      },
+      "reset_of_water_usage_days": {
+        "name": "用水天数重置"
+      },
+      "reverse": {
+        "name": "反向"
+      },
+      "sleep": {
+        "name": "睡眠"
+      },
+      "sleep_aid": {
+        "name": "助眠"
+      },
+      "slow_feed": {
+        "name": "慢速喂食"
+      },
+      "socket_4": {
+        "name": "插座4"
+      },
+      "socket_5": {
+        "name": "插座5"
+      },
+      "socket_6": {
+        "name": "插座6"
+      },
+      "sound": {
+        "name": "声音"
+      },
+      "sound_detection": {
+        "name": "声音检测"
+      },
+      "spray": {
+        "name": "喷雾"
+      },
+      "start": {
+        "name": "开始"
+      },
+      "sterilization": {
+        "name": "杀菌"
+      },
+      "switch_5": {
+        "name": "开关5"
+      },
+      "switch_6": {
+        "name": "开关6"
+      },
+      "switch_7": {
+        "name": "开关7"
+      },
+      "switch_8": {
+        "name": "开关8"
+      },
+      "time_watermark": {
+        "name": "时间水印"
+      },
+      "usb_5": {
+        "name": "USB5"
+      },
+      "usb_6": {
+        "name": "USB6"
+      },
+      "uv_sterilization": {
+        "name": "紫外线杀菌"
+      },
+      "video_recording": {
+        "name": "视频录制"
+      },
+      "voice": {
+        "name": "语音"
+      },
+      "water": {
+        "name": "水"
+      },
+      "water_pump_reset": {
+        "name": "水泵重置"
+      },
+      "wide_dynamic_range": {
+        "name": "宽动态范围"
+      }
+    },
+    "select": {
+      "basic_anti_flicker": {
+        "name": "防闪烁",
+        "state": {
+          "0": "禁用",
+          "1": "50 Hz",
+          "2": "60 Hz"
+        }
+      },
+      "basic_nightvision": {
+        "name": "夜视",
+        "state": {
+          "0": "自动",
+          "1": "关闭",
+          "2": "开启"
+        }
+      },
+      "blanket_level": {
+        "name": "电热毯等级",
+        "state": {
+          "level_1": "低",
+          "level_10": "高",
+          "level_2": "等级2",
+          "level_3": "等级3",
+          "level_4": "等级4",
+          "level_5": "等级5",
+          "level_6": "等级6",
+          "level_7": "等级7",
+          "level_8": "等级8",
+          "level_9": "等级9"
+        }
+      },
+      "brightness": {
+        "name": "亮度"
+      },
+      "concentration": {
+        "name": "浓度"
+      },
+      "countdown": {
+        "name": "倒计时",
+        "state": {
+          "1h": "1小时",
+          "2h": "2小时",
+          "3h": "3小时",
+          "4h": "4小时",
+          "5h": "5小时",
+          "6h": "6小时",
+          "cancel": "取消"
+        }
+      },
+      "cups": {
+        "name": "杯数"
+      },
+      "curtain_mode": {
+        "name": "模式",
+        "state": {
+          "morning": "晨间",
+          "night": "夜间"
+        }
+      },
+      "curtain_motor_mode": {
+        "name": "电机模式",
+        "state": {
+          "back": "后退",
+          "forward": "前进"
+        }
+      },
+      "decibel_sensitivity": {
+        "name": "声音检测灵敏度",
+        "state": {
+          "0": "低灵敏度",
+          "1": "高灵敏度"
+        }
+      },
+      "fingerbot_mode": {
+        "name": "模式",
+        "state": {
+          "click": "推送",
+          "switch": "开关"
+        }
+      },
+      "horizontal_fan_angle": {
+        "name": "水平摆叶角度",
+        "state": {
+          "30": "30°",
+          "60": "60°",
+          "90": "90°"
+        }
+      },
+      "humidifier_level": {
+        "name": "喷雾等级",
+        "state": {
+          "level_1": "等级1",
+          "level_10": "等级10",
+          "level_2": "等级2",
+          "level_3": "等级3",
+          "level_4": "等级4",
+          "level_5": "等级5",
+          "level_6": "等级6",
+          "level_7": "等级7",
+          "level_8": "等级8",
+          "level_9": "等级9"
+        }
+      },
+      "humidifier_moodlighting": {
+        "name": "氛围灯",
+        "state": {
+          "1": "氛围1",
+          "2": "氛围2",
+          "3": "氛围3",
+          "4": "氛围4",
+          "5": "氛围5"
+        }
+      },
+      "humidifier_spray_mode": {
+        "name": "喷雾模式",
+        "state": {
+          "auto": "自动",
+          "health": "健康",
+          "humidity": "湿度",
+          "sleep": "睡眠",
+          "work": "工作"
+        }
+      },
+      "ipc_work_mode": {
+        "name": "IPC模式",
+        "state": {
+          "0": "低功耗模式",
+          "1": "连续工作模式"
+        }
+      },
+      "led_type": {
+        "name": "光源类型",
+        "state": {
+          "halogen": "卤素灯",
+          "incandescent": "白炽灯",
+          "led": "LED"
+        }
+      },
+      "led_type_2": {
+        "name": "灯2源类型",
+        "state": {
+          "halogen": "卤素灯",
+          "incandescent": "白炽灯",
+          "led": "LED"
+        }
+      },
+      "led_type_3": {
+        "name": "灯3源类型",
+        "state": {
+          "halogen": "卤素灯",
+          "incandescent": "白炽灯",
+          "led": "LED"
+        }
+      },
+      "light_mode": {
+        "name": "指示灯模式",
+        "state": {
+          "none": "关闭",
+          "pos": "指示反转开关状态",
+          "relay": "指示开关开/关状态"
+        }
+      },
+      "material": {
+        "name": "材质"
+      },
+      "mode": {
+        "name": "模式"
+      },
+      "motion_sensitivity": {
+        "name": "运动检测灵敏度",
+        "state": {
+          "0": "低",
+          "1": "中",
+          "2": "高"
+        }
+      },
+      "record_mode": {
+        "name": "录制模式",
+        "state": {
+          "1": "仅录制事件",
+          "2": "连续录制"
+        }
+      },
+      "relay_status": {
+        "name": "通电行为",
+        "state": {
+          "last": "记住上次状态",
+          "memory": "记住上次状态",
+          "off": "关闭",
+          "on": "开启",
+          "power_off": "关闭",
+          "power_on": "开启"
+        }
+      },
+      "target_humidity": {
+        "name": "目标湿度"
+      },
+      "temperature_level": {
+        "name": "温度等级"
+      },
+      "vacuum_cistern": {
+        "name": "水箱调节",
+        "state": {
+          "closed": "关闭",
+          "high": "高",
+          "low": "低",
+          "middle": "中"
+        }
+      },
+      "vacuum_collection": {
+        "name": "集尘模式",
+        "state": {
+          "large": "大",
+          "middle": "中",
+          "small": "小"
+        }
+      },
+      "vacuum_mode": {
+        "name": "模式",
+        "state": {
+          "bow": "弓形",
+          "chargego": "回充",
+          "left_bow": "左弓形",
+          "left_spiral": "左螺旋",
+          "mop": "拖地",
+          "part": "部分",
+          "partial_bow": "部分弓形",
+          "pick_zone": "选择区域",
+          "point": "定点",
+          "pose": "位置",
+          "random": "随机",
+          "right_bow": "右弓形",
+          "right_spiral": "右螺旋",
+          "single": "单次",
+          "smart": "智能",
+          "spiral": "螺旋",
+          "standby": "待机",
+          "wall_follow": "沿墙",
+          "zone": "区域"
+        }
+      },
+      "vertical_fan_angle": {
+        "name": "垂直摆叶角度",
+        "state": {
+          "30": "30°",
+          "60": "60°",
+          "90": "90°"
+        }
+      },
+      "volume": {
+        "name": "音量"
+      },
+      "weather_delay": {
+        "name": "天气延迟",
+        "state": {
+          "120h": "120小时",
+          "144h": "144小时",
+          "168h": "168小时",
+          "24h": "24小时",
+          "48h": "48小时",
+          "72h": "72小时",
+          "96h": "96小时",
+          "cancel": "取消"
+        }
+      },
+      "work_mode": {
+        "name": "工作模式",
+        "state": {
+          "self_powered": "自发自用",
+          "time_of_use": "ToU分时运行",
+          "manual": "手动模式"
+        }
+      }
+    },
+    "event": {
+      "numbered_button": {
+        "name": "按钮{button_number}",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "click": "单击",
+              "double_click": "双击",
+              "press": "长按"
+            }
+          }
+        }
+      }
+    },
+    "valve": {
+      "switch": {
+        "name": "开关"
+      },
+      "indexed_switch": {
+        "name": "开关{index}"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "能量上报配置",
+        "description": "配置每个能量设备如何上报其数值。\n\n**能量上报模式:**\n• **累积模式**: 直接使用设备的总能量值（推荐用于大多数设备）\n• **增量模式**: 累积时间段内的能量变化，适用于上报能量增量的设备\n\n请为以下每个设备选择能量上报模式。设备 ID 显示在括号中用于识别。"
+      },
+      "no_energy_devices": {
+        "title": "未找到能量设备",
+        "description": "在此 Tuya 集成中未找到能量或储能设备。能量上报配置仅适用于具有能量传感器的设备（如电池储能系统、逆变器或智能电表）。"
+      }
+    }
+  },
+  "selector": {
+    "energy_report_mode": {
+      "options": {
+        "cumulative": "累积模式",
+        "incremental": "增量模式"
+      }
+    }
+  },
+  "issues": {
+    "deprecated_switch_replaced_by_other": {
+      "title": "开关实体已被替换",
+      "description": "您的 {device_name} 设备的{switch_name}开关实体已被弃用，并被 {entity_type} 实体取代。{entity_type} 实体为此设备提供了更合适的控制方式。请禁用开关实体并改用 {entity_type} 实体。"
+    }
+  }
+}

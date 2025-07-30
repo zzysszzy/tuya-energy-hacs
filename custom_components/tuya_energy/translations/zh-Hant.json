@@ -1,0 +1,159 @@
+{
+  "config": {
+    "step": {
+      "reauth_user_code": {
+        "description": "Tuya 整合現在使用改進的登入方法。要重新驗證您的智慧生活或 Tuya Smart 帳戶，您需要輸入使用者代碼。\n\n您可以在智慧生活應用程式或 Tuya Smart 應用程式的**設定** > **帳戶和安全**畫面中找到此代碼，並輸入**使用者代碼**欄位中顯示的代碼。使用者代碼區分大小寫，請確保按照應用程式中顯示的內容準確輸入。",
+        "data": {
+          "user_code": "使用者代碼"
+        }
+      },
+      "user": {
+        "description": "輸入您的智慧生活或 Tuya Smart 使用者代碼。\n\n您可以在智慧生活應用程式或 Tuya Smart 應用程式的**設定** > **帳戶和安全**畫面中找到此代碼，並輸入**使用者代碼**欄位中顯示的代碼。使用者代碼區分大小寫，請確保按照應用程式中顯示的內容準確輸入。",
+        "data": {
+          "user_code": "使用者代碼"
+        }
+      },
+      "scan": {
+        "description": "使用智慧生活應用程式或 Tuya Smart 應用程式掃描以下 QR 碼以完成登入。\n\n在應用程式中完成此步驟後，繼續下一步。"
+      }
+    },
+    "error": {
+      "invalid_auth": "身份驗證無效",
+      "login_error": "登入錯誤 ({code}): {msg}"
+    },
+    "abort": {
+      "reauth_successful": "重新驗證成功"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery_soc": {
+        "name": "電池電量"
+      },
+      "total_pv_power": {
+        "name": "光伏總功率"
+      },
+      "pv_power_channel": {
+        "name": "光伏功率通道{channel}"
+      },
+      "battery_power": {
+        "name": "電池功率（正值放電，負值充電）"
+      },
+      "inverter_output_power": {
+        "name": "逆變器輸出功率"
+      },
+      "cumulative_energy_output_inv": {
+        "name": "逆變器累計發電量"
+      },
+      "cumulative_energy_discharged": {
+        "name": "電池累計放電量"
+      },
+      "cumulative_energy_charged": {
+        "name": "電池累計充電量"
+      },
+      "serial_number": {
+        "name": "序列號"
+      },
+      "battery_capacity": {
+        "name": "電池容量"
+      },
+      "total_energy": {
+        "name": "總電量"
+      },
+      "total_production": {
+        "name": "總發電量"
+      },
+      "phase_a_current": {
+        "name": "A相電流"
+      },
+      "phase_a_power": {
+        "name": "A相功率"
+      },
+      "phase_a_voltage": {
+        "name": "A相電壓"
+      },
+      "phase_b_current": {
+        "name": "B相電流"
+      },
+      "phase_b_power": {
+        "name": "B相功率"
+      },
+      "phase_b_voltage": {
+        "name": "B相電壓"
+      },
+      "phase_c_current": {
+        "name": "C相電流"
+      },
+      "phase_c_power": {
+        "name": "C相功率"
+      },
+      "phase_c_voltage": {
+        "name": "C相電壓"
+      },
+      "current": {
+        "name": "電流"
+      },
+      "power": {
+        "name": "功率"
+      },
+      "voltage": {
+        "name": "電壓"
+      }
+    },
+    "number": {
+      "indexed_irrigation_duration": {
+        "name": "灌溉時長{index}"
+      },
+      "backup_reserve": {
+        "name": "備用電量保留"
+      },
+      "output_power_limit": {
+        "name": "輸出功率限制"
+      }
+    },
+    "select": {
+      "work_mode": {
+        "name": "工作模式",
+        "state": {
+          "self_powered": "自發自用",
+          "time_of_use": "分時用電",
+          "manual": "手動"
+        }
+      }
+    },
+    "switch": {
+      "indexed_switch": {
+        "name": "開關{index}"
+      },
+      "feedin_power_limit_enable": {
+        "name": "反向供電功率限制啟用"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "能量上報配置",
+        "description": "配置每個能量裝置如何上報其數值。\n\n**能量上報模式:**\n• **累積模式**: 直接使用裝置的總能量值（建議用於大多數裝置）\n• **增量模式**: 累積時間段內的能量變化，適用於上報能量增量的裝置\n\n請為以下每個裝置選擇能量上報模式。裝置 ID 顯示在括號中用於識別。"
+      },
+      "no_energy_devices": {
+        "title": "未找到能量裝置",
+        "description": "在此 Tuya 整合中未找到能量或儲能裝置。能量上報配置僅適用於具有能量感測器的裝置（如電池儲能系統、逆變器或智慧電表）。"
+      }
+    },
+    "selector": {
+      "energy_report_mode": {
+        "options": {
+          "cumulative": "累積模式",
+          "incremental": "增量模式"
+        }
+      }
+    }
+  },
+  "issues": {
+    "deprecated_switch_replaced_by_other": {
+      "title": "開關實體已被取代",
+      "description": "您的 {device_name} 裝置的{switch_name}開關實體已被棄用，並被 {entity_type} 實體取代。{entity_type} 實體為此裝置提供了更合適的控制方式。請停用開關實體並改用 {entity_type} 實體。"
+    }
+  }
+}

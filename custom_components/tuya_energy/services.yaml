@@ -1,0 +1,9 @@
+tuya_energy_refresh_devices:
+  name: "Refresh Tuya Energy Devices"
+  description: "Refresh the list of Tuya energy devices"
+  fields:
+    device_id:
+      name: "Device ID"
+      description: "Specific device ID to refresh (optional)"
+      required: false
+      example: "1234567890abcdef" 
