@@ -1,16 +1,19 @@
 # Changelog
 
-## [1.0.0] - 2024-01-XX
+## [1.0.0] - 2025-07-30
 
 ### About This Release
+
 This release is based on the official Home Assistant Tuya integration with enhanced energy monitoring capabilities.
 
 **Original Code Attribution:**
+
 - Original Tuya Integration: Home Assistant Team
 - License: Apache License 2.0
 - Source: https://github.com/home-assistant/core/tree/dev/homeassistant/components/tuya
 
 ### Added
+
 - Complete Tuya integration with enhanced energy monitoring
 - Support for all Tuya device types (switches, lights, climate, sensors, etc.)
 - Energy monitoring with cumulative and incremental reporting modes
@@ -30,6 +33,7 @@ This release is based on the official Home Assistant Tuya integration with enhan
   - And all other Tuya-compatible devices
 
 ### Features
+
 - **Enhanced Energy Monitoring**: Real-time power, current, voltage, and energy consumption tracking
 - **Flexible Energy Reporting**: Support for both cumulative and incremental energy reporting modes
 - **Device Configuration**: Per-device energy reporting mode configuration
@@ -39,6 +43,7 @@ This release is based on the official Home Assistant Tuya integration with enhan
 - **Comprehensive Device Support**: All Tuya device types and categories
 
 ### Technical Improvements
+
 - Based on official Tuya integration with energy monitoring enhancements
 - Improved error handling and logging
 - Enhanced device discovery and management
@@ -46,6 +51,7 @@ This release is based on the official Home Assistant Tuya integration with enhan
 - Optimized performance and reliability
 
 ### Breaking Changes
+
 - This is a complete rewrite based on the official Tuya integration
 - Domain changed from `tuya_energy` to maintain compatibility
-- Enhanced energy monitoring capabilities while preserving all original Tuya functionality 
+- Enhanced energy monitoring capabilities while preserving all original Tuya functionality
