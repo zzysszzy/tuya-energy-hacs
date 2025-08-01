@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.1] - 2025-01-27
+## [1.0.1] - 2025-08-01
 
 ### Fixed
 
@@ -14,7 +14,7 @@
 ### Technical Changes
 
 - Updated `custom_components/tuya_energy/number.py`: Removed deprecated `DEVICE_CLASS_UNITS` import
-- Updated `custom_components/tuya_energy/sensor.py`: Removed deprecated `DEVICE_CLASS_UNITS` import  
+- Updated `custom_components/tuya_energy/sensor.py`: Removed deprecated `DEVICE_CLASS_UNITS` import
 - Updated `custom_components/tuya_energy/manifest.json`: Added Home Assistant version requirement
 
 ---
