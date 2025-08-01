@@ -501,9 +501,6 @@ class TuyaNumberEntity(TuyaEntity, NumberEntity):
             self.device_class is not None
             and not self.device_class.startswith(DOMAIN)
             and description.native_unit_of_measurement is None
-            # we do not need to check mappings if the API UOM is allowed
-            and self.native_unit_of_measurement
-            not in DEVICE_CLASS_UNITS[self.device_class]
         ):
             # We cannot have a device class, if the UOM isn't set or the
             # device class cannot be found in the validation mapping.
