@@ -12,7 +12,6 @@ from tuya_sharing import CustomerDevice, Manager
 from tuya_sharing.device import DeviceStatusRange
 
 from homeassistant.components.sensor import (
-    DEVICE_CLASS_UNITS as SENSOR_DEVICE_CLASS_UNITS,
     RestoreSensor,
     SensorDeviceClass,
     SensorEntity,
@@ -1637,7 +1636,7 @@ class TuyaSensorEntity(TuyaEntity, SensorEntity):
             and description.native_unit_of_measurement is None
             # we do not need to check mappings if the API UOM is allowed
             and self.native_unit_of_measurement
-            not in SENSOR_DEVICE_CLASS_UNITS[self.device_class]
+            not in DEVICE_CLASS_UNITS[self.device_class]
         ):
             # We cannot have a device class, if the UOM isn't set or the
             # device class cannot be found in the validation mapping.
