@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.1] - 2025-01-27
+
+### Fixed
+
+- **Import Error Fix**: Resolved `DEVICE_CLASS_UNITS` import error in Home Assistant newer versions
+  - Fixed import error in `number.py` and `sensor.py`
+  - Removed deprecated imports from `homeassistant.components.number` and `homeassistant.components.sensor`
+  - Now uses local `DEVICE_CLASS_UNITS` definition for better compatibility
+- **Version Compatibility**: Added `homeassistant: "2023.8.0"` requirement to `manifest.json`
+- **Better Error Handling**: Improved compatibility with newer Home Assistant versions
+
+### Technical Changes
+
+- Updated `custom_components/tuya_energy/number.py`: Removed deprecated `DEVICE_CLASS_UNITS` import
+- Updated `custom_components/tuya_energy/sensor.py`: Removed deprecated `DEVICE_CLASS_UNITS` import  
+- Updated `custom_components/tuya_energy/manifest.json`: Added Home Assistant version requirement
+
+---
+
 ## [1.0.0] - 2025-07-30
 
 ### About This Release
