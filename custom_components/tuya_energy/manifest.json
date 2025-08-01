@@ -1,7 +1,7 @@
 {
   "domain": "tuya_energy",
   "name": "Tuya Energy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homeassistant": "2023.8.0",
   "codeowners": ["@Tuya", "@zlinoliver"],
   "config_flow": true,
